@@ -46,7 +46,7 @@ class CacaoRequest {
             request.onload = function () {
 
                 response.status = request.status;
-                response.content = request.response;
+                response.content = JSON.parse(request.response);
 
                 resoluve(response);
             };
