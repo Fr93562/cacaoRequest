@@ -1,4 +1,4 @@
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/5a12a718a5784576a3a89600ddcc4f9a)](https://www.codacy.com/manual/Fr93562/cacaoDom?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Fr93562/cacaoDom&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/e2767efbf27a4c4b97dbc1e38feac16b)](https://www.codacy.com/manual/Fr93562/cacaoRequest?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Fr93562/cacaoRequest&amp;utm_campaign=Badge_Grade)
 ![coverage](https://img.shields.io/badge/coverage-100-green)
 ![dependance](https://img.shields.io/badge/dependance-0-green)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
