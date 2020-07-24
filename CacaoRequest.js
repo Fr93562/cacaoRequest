@@ -49,7 +49,7 @@ class CacaoRequest {
                 response.content = request.response;
 
                 resoluve(response);
-            }
+            };
         });
 
         return myRequest.then(function (response) {
