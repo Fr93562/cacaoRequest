@@ -32,7 +32,7 @@ CacaoRequest est la librairie qui gère les requêtes Ajax. Comme les autres lib
 Pour utiliser la librairie, il suffit d'importer le fichier CacaoDom.js comme ci-dessous:
 
 ```javascript
-import CacaoDom from '../libary/CacaoRequest';
+import CacaoRequest from '../libary/CacaoRequest';
 ```
 
 Dans les cas suivants, on suppose qu'on souhaite accéder à l'api de gitHub en méthode get.
@@ -46,7 +46,7 @@ Il faut faire appel à la méthode send().
 CacaoRequest.send("https://api.github.com/", "GET");
 ```
 
-Il est possible d'ajouter des éléments au header de body de la requête:
+Il est possible d'ajouter des éléments au header et le body de la requête:
 ```javascript
 CacaoRequest.send("https://api.github.com/", "GET", "Content-Type: application/json", "vos valeurs");
 ```
