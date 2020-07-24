@@ -17,7 +17,7 @@ class CacaoRequest {
      * 
      * @param {*} url string - url à appeler
      * @param {*} method string - type de méthode à employer (POST..)
-     * @param {*} header string - permet d'ajouter des informations au header - optionnel
+     * @param {*} header string / array - permet d'ajouter des informations au header - optionnel
      * @param {*} content string - contenu de la requête - optionnel
      */
     async send(url, method, header, content) {
@@ -31,7 +31,15 @@ class CacaoRequest {
 
             if (header) {
 
-                request.setRequestHeader(header);
+                if(typeof header === "string") {
+
+                    header = [header];
+                }
+
+                header.forEach(element => {
+                    request.setRequestHeader(element);
+
+                });
             }
             request.send(content);
 
@@ -47,6 +55,10 @@ class CacaoRequest {
         return myRequest.then(function (response) {
 
             return response;
+
+        }, function(reject) {
+
+            throw reject;
         });
     }
 }

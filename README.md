@@ -1,10 +1,11 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/5a12a718a5784576a3a89600ddcc4f9a)](https://www.codacy.com/manual/Fr93562/cacaoDom?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Fr93562/cacaoDom&amp;utm_campaign=Badge_Grade)
+![coverage](https://img.shields.io/badge/coverage-100-green)
 ![dependance](https://img.shields.io/badge/dependance-0-green)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 
 
-# CacaoDom
+# CacaoRequest
 
 ![image](./assets/CacaoRequest.jpg)
 
@@ -51,15 +52,24 @@ Il est possible d'ajouter des éléments au header et le body de la requête:
 CacaoRequest.send("https://api.github.com/", "GET", "Content-Type: application/json", "vos valeurs");
 ```
 
+ou encore:
+
+```javascript
+CacaoRequest.send("https://api.github.com/", "GET", ["Content-Type: application/json", "token: 1234567890"], "vos valeurs");
+```
+
+
+
 Cette méthode requiert 4 paramètres dont deux optionnelles:
 
 ```
 paramètre 1 : string - l'url du serveur distant
 paramètre 2 : string - méthode http (POST, GET..)
-paramètre 3 : string - élément à ajouter au header
+paramètre 3 : string / array - élément à ajouter au header
 paramètre 4 : string - body de la requête 
 ```
 
+*Note: La méthode accepte indifféremment un string ou array pour le header. La méthode se base sur un array pour fonctionner. Si un string passe en paramètre, il est transformé en array lors de l'opération.*
 
 ### Réponse
 
